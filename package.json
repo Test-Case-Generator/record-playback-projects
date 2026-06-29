@@ -8,7 +8,7 @@
     "test:regression": "playwright test regression --project=chromium --headed"
   },
   "devDependencies": {
-    "@playwright/test": "^1.60.0",
-    "allure-playwright": "^3.9.0"
+    "@playwright/test": "^1.61.1",
+    "allure-playwright": "^3.10.2"
   }
 }
