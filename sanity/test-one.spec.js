@@ -1,7 +1,7 @@
 import testData from '../test-data.json';
 import { test, expect } from '@playwright/test';
 
-test('Test  @sanity', async ({ page }) => {
+test('Test 1  @sanity', async ({ page }) => {
   // Initial navigation
   await page.goto(testData.url);
   await page.waitForLoadState('domcontentloaded');
