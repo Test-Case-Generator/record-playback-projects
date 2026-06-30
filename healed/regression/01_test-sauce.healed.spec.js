@@ -2,7 +2,7 @@ import testData from '../../test-data.json';
 const { test, expect } = require('../../fixtures/walker_fixture.js');
 const { heal } = require('../../fixtures/inline_healer.js');
 
-test('TestSauce @regression', async ({ page }) => {
+test('TestSauce-1 @regression', async ({ page }) => {
   await page.goto(testData.url);
   await page.waitForLoadState('domcontentloadjued');
 
