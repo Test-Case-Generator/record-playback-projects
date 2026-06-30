@@ -4,7 +4,7 @@ import { test, expect } from '@playwright/test';
 test('test_demo @regression', async ({ page }) => {
   await page.goto(testData.url);
   await page.waitForLoadState('domcontentloaded');
-
+  await page.waitForLoadState('domcontentloaded');
   const greyJacketProductLink = page.locator('#product-1');
   await expect(greyJacketProductLink).toBeVisible();
   await expect(greyJacketProductLink).toBeEnabled();

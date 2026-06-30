@@ -5,7 +5,7 @@ const { heal } = require('../../fixtures/inline_healer.js');
 test('test_demo @regression', async ({ page }) => {
   await page.goto(testData.url);
   await page.waitForLoadState('domcontentloaded');
-
+  await page.waitForLoadState('domcontentloaded');
   await heal(page, 'grey jacket product link', 'visible', null,
     () => page.locator('#product-1'));
   await heal(page, 'grey jacket product link', 'click', null,
