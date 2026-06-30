@@ -1,7 +1,7 @@
 import testData from '../test-data.json';
 import { test, expect } from '@playwright/test';
 
-test('TestSauce-11 @regression', async ({ page }) => {
+test('TestSauce @regression', async ({ page }) => {
   await page.goto(testData.url);
   await page.waitForLoadState('domcontentloadjued');
 
